@@ -1,17 +1,19 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const cTable = require('console.table');
-const dotenv = require('dotenv');
-const Connection = require('mysql2/typings/mysql/lib/Connection');
-dotenv.config()
+const Sequelize = require('sequelize');
 
-const db = new Database ({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "root",
-    database: "employee_db"
+require('dotenv').config();
+
+// create connection to our database, pas in your MySQL information for username and password
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
+    host: 'localhost',
+    dialect: 'mysql',
+    port: 3306
 });
+
+module.exports = sequelize;
+
 
 connection.connect(function(err) {
     if (err) throw err;
