@@ -62,7 +62,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 John Nguyen
 <li><a href="mailto:jnguyeningco@gmail.com">Email</a>
 <li><a href="https://www.linkedin.com/in/john-nguyen-49158621a">Linked In</a>
-<li><a href="https://github.com/JoNoC0/employee-tracker">employee-tracker</a>
+<li><a href="https://github.com/JoNoC0/employee-tracker">employee-tracker Repo</a>
 <li><a href="https://drive.google.com/file/d/1ebWz44d8-53H27RAGqTzlOkqC_-4-Zi3/view">Video Link</a>
 
 
