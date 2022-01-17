@@ -34,13 +34,14 @@ Run the following commands:
 
 # Documentation
 
-Starting app locally using "npm start"
-<img src="https://github.com/JoNoC0/employee-tracker/blob/main/assets/images/employeeTracker2.png?raw=true" alt="employee tracker CLI" title="employee tracker CLI" style="max-width: 25">
-
-Employee tracker asking questions and waiting for user response(selection)
+## Starting app locally using "npm start"
 <img src="https://github.com/JoNoC0/employee-tracker/blob/main/assets/images/employeeTracker1.png?raw=true" alt="employee tracker CLI" title="employee tracker CLI" style="max-width: 25">
 
+## Employee tracker asking questions and waiting for user response(selection)
+<img src="https://github.com/JoNoC0/employee-tracker/blob/main/assets/images/employeeTracker2.png?raw=true" alt="employee tracker CLI" title="employee tracker CLI" style="max-width: 25">
 
+## Employee Tracker Demo
+<img src="./assets/images/employee-tracker.gif"></img>
 # Credits
 
 University of Texas in Austin Coding Bootcamp Week 12 Module 12: SQL Challenge
@@ -62,7 +63,7 @@ John Nguyen
 <li><a href="mailto:jnguyeningco@gmail.com">Email</a>
 <li><a href="https://www.linkedin.com/in/john-nguyen-49158621a">Linked In</a>
 <li><a href="https://github.com/JoNoC0/employee-tracker">employee-tracker</a>
-
+<li><a href="https://drive.google.com/file/d/1ebWz44d8-53H27RAGqTzlOkqC_-4-Zi3/view">Video Link</a>
 
 
 
