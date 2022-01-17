@@ -4,69 +4,93 @@ const cTable = require("console.table");
 
 require('dotenv').config();
 
-// Establish server & PORT
-
+// connection to database
 const connection = mysql.createConnection({
   host: "localhost",
-  // port: 8889,
-  user: "root",
-  password: 'root',
-  database: "employeeDb"
+  user: process.env.DB_USER,
+  password: process.env.DB_PW,
+  database: "employee_db"
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) throw err;
+  console.log('connected as id ' + connection.threadId);
   start();
 });
 
+// inquirer prompt, asking for user input by repsonding to prompts
 function start() {
   inquirer
     .prompt({
       type: "list",
-      name: "option",
+      name: "options",
       message: "What would you like to do?",
-      choices: [
-        "Add Department",
-        "Add Role",
-        "Add Employee",
-        "View Department",
-        "View Role",
-        "View Employee",
-        "Update Employee Role",
-        "Exit"
+      choices: 
+      [
+        'View all departments', 
+        'View all roles', 
+        'View all employees', 
+        'Add a department', 
+        'Add a role', 
+        'Add an employee', 
+        'Update an employee role',
+        'Update an employee manager',
+        "View employees by department",
+        'Delete a department',
+        'Delete a role',
+        'Delete an employee',
+        'View department budgets',
+        'No Action'
       ]
     })
 
-    .then(function(result) {
-      console.log("You entered: " + result.option);
-      switch (result.option) {
-        case "Add Department":
-          addDepartment();
-          break;
-        case "Add Role":
-          addRole();
-          break;
-        case "Add Employee":
-          addEmployee();
-          break;
-        case "View Department":
-          viewDepartment();
-          break;
-        case "View Role":
-          viewRole();
-          break;
-        case "View Employee":
-          viewEmployee();
-          break;
-        case "Update Employee Role":
-          updateRole();
-          break;
-        case "Exit":
-          connection.end();
-          break;
-      }
-    });
-}
+   .then((answers) => {
+     const { options } = answers;
+
+     if (choices === "view all departments") {
+       showDepartments();
+     }
+     if (choices === "View all roles") {
+      showRoles();
+    }
+    if (choices === "View all employees") {
+      showEmployees();
+    }
+    if (choices === "Add a department") {
+      addDepartment();
+    }
+    if (choices === "Add a role") {
+      addRole();
+    }
+    if (choices === "Add an employee") {
+      addEmployee();
+    }
+    if (choices === "Update an employee role") {
+      updateEmployee();
+    }
+    if (choices === "Update an employee manager") {
+      updateManager();
+    }
+    if (choices === "View employees by department") {
+      employeeDepartment();
+    }
+    if (choices === "Delete a department") {
+      deleteDepartment();
+    }
+    if (choices === "Delete a role") {
+      deleteRole();
+    }
+    if (choices === "Delete an employee") {
+      deleteEmployee();
+    }
+    if (choices === "View department budgets") {
+      viewBudget();
+    }
+    if (choices === "No Action") {
+      connection.end()
+    };
+  });
+};
 
 function addDepartment() {
   inquirer
