@@ -1,10 +1,8 @@
 # Tech-Blog
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Description
 
-The application contained within is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
-
-# Table of Contents
+A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL
 
 <li><a href="#installation">Installation</a></li>
 <li><a href="#usage">Usage</a></li>
@@ -21,9 +19,7 @@ First user needs to <a href="https://github.com/JoNoC0/employee-tracker">Clone r
 <ul><code> npm install </code></ul>
 
 # Usage
-
-In order to use the application, first ensure that MYSQL is installed in your environment.
-Then, from the project root folder enter the sql shell and run the following command:
+To use: follow instructions below
 
 <ul><code>mysql -u root -p</code></ul>
 <ul><code>source db/schema.sql</code></ul>
@@ -37,12 +33,17 @@ Run the following commands:
 
 
 # Documentation
-<img src="https://github.com/JoNoC0/Tech-Blog/blob/main/images/tech-blog.png?raw=true" alt="tech-blog post" title="tech-blog post" style="max-width: 100">
+
+Starting app locally using "npm start"
+<img src="https://github.com/JoNoC0/employee-tracker/blob/main/assets/images/employeeTracker2.png?raw=true" alt="employee tracker CLI" title="employee tracker CLI" style="max-width: 25">
+
+Employee tracker asking questions and waiting for user response(selection)
+<img src="https://github.com/JoNoC0/employee-tracker/blob/main/assets/images/employeeTracker1.png?raw=true" alt="employee tracker CLI" title="employee tracker CLI" style="max-width: 25">
 
 
 # Credits
 
-University of Texas in Austin Coding Bootcamp Week 14 Module 14: MVC
+University of Texas in Austin Coding Bootcamp Week 12 Module 12: SQL Challenge
 Tech-Blog
 
 # License
@@ -60,9 +61,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 John Nguyen
 <li><a href="mailto:jnguyeningco@gmail.com">Email</a>
 <li><a href="https://www.linkedin.com/in/john-nguyen-49158621a">Linked In</a>
-<li><a href="https://github.com/JoNoC0/Tech-Blog">Tech-Blog</a>
+<li><a href="https://github.com/JoNoC0/employee-tracker">employee-tracker</a>
 
 
 
 
-https://drive.google.com/file/d/1ebWz44d8-53H27RAGqTzlOkqC_-4-Zi3/view
