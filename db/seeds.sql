@@ -1,7 +1,11 @@
 USE employee_db;
 
-INSERT INTO  department (name) VALUES
-("Customer Service"), ("Information Technology"), ("Human Resources"), ("Marketing");
+INSERT INTO  department (name) 
+VALUES
+("Customer Service"), 
+("Information Technology"), 
+("Human Resources"), 
+("Marketing");
 
 INSERT INTO role (title, salary, department_id)
 VALUES
