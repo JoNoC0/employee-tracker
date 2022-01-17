@@ -1,14 +1,16 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const inquirer = require("inquirer");
-const consoleTable = require("console.table");
+const cTable = require("console.table");
+
+require('dotenv').config();
 
 // Establish server & PORT
 
 const connection = mysql.createConnection({
   host: "localhost",
-  port: 8889,
+  // port: 8889,
   user: "root",
-  password: "root",
+  password: 'root',
   database: "employeeDb"
 });
 

@@ -1,4 +1,4 @@
-USE employeeDb;
+USE employee_db;
 
 INSERT INTO  department (name) VALUES
 ("Customer Service"), ("Information Technology"), ("Human Resources"), ("Marketing");
